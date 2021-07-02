@@ -1,0 +1,81 @@
+body {
+   padding:20px;
+}
+
+.content-loader {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 472px;
+    min-height: 100px;
+    position: relative;
+}
+
+.c-bg  {
+    height: 8px;
+    margin-bottom: 6px;
+    background: #f6f7f0;
+}
+
+.content-loader .c-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    position: absolute;
+}
+
+.c-first-header {
+    margin-top: 9px;
+    margin-left: 50px;
+    width: 60%;
+}
+
+div.c-second-header {
+    height: 6px;
+    margin-left: 50px;
+    width: 40%;
+}
+
+.c-first-line {
+    margin-top: 30px;
+    width: 80%;
+}
+
+.c-second-line {
+    width: 90%;
+}
+
+.c-third-line {
+    width: 60%;
+}
+
+.c-fourth-line {
+    width: 70%;
+}
+
+.c-fifth-line {
+    width: 50%;
+}
+
+/* @keyframes move {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.content-loader .animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: move;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    position: relative;
+} */

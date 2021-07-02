@@ -1,7 +1,24 @@
-import React from 'react'
-import styles from "./Facebook.css"
+import React, { Fragment } from "react";
+import styles from "./Facebook.css";
 
-const Facebook =props=> <div> hello</div>
-
-
-export default Facebook
+const Facebook = (props) => (
+  <Fragment>
+    <div
+      style={{
+        height: "40px",
+        width: "40px",
+        position: "absolute",
+        borderRadius: "100px",
+        top: "10px",
+      }}
+    ></div>
+    <div style={{ width: "70%", left: "50px" }}></div>
+    <div style={{ width: "40%", left: "50px" }}></div>
+    <div style={{ width: "40%", left: "50px" }}></div>
+    <div style={{ width: "40%", left: "50px" }}></div>
+    <div style={{ width: "40%", left: "50px" }}></div>
+    <div style={{ width: "90%", left: "0", marginTop: "30px" }}></div>
+    <div style={{ width: "90%", left: "0" }}></div>
+  </Fragment>
+);
+export default Facebook;
