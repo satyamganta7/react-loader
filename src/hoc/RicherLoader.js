@@ -48,24 +48,24 @@ const RicherLoader = (props) => {
   // );
 
   return props.children.map((child) => {
-    let left =  Object.values({...child.props.style.left}).join('')
+    let left =  child.props.style?Object.values({...child.props.style.left}).join(''):'0px';
     console.log(left)
     return props.animate
       ? child.props.className
         ? React.cloneElement(child, {
             ...child.props,
             style: {
-              position: "relative",
-              width:`calc(100% - ${left})`,
+              //position: "relative",
+             // width:`calc(100% - ${left})`,
               marginBottom: "6px",
               animationDuration: props.speed,
               animationFillMode: "forwards",
               animationIterationCount: "infinite",
               animationTimingFunction: "linear",
               // animationName: spin,
-              backgroundSize: "800px 104px",
 
               background: `linear-gradient(to right, ${props.background} 8%, #dddddd 18%, ${props.background} 33%)`,
+              backgroundSize: "800px 104px",
               ...child.props.style,
             },
             className: `${child.props.className} animated`,
@@ -73,8 +73,8 @@ const RicherLoader = (props) => {
         : React.cloneElement(child, {
             ...child.props,
             style: {
-              position: "relative",
-              width:`calc(100% - ${left})`,
+              //position: "relative",
+            //  width:`calc(100% - ${left})`,
               animationDuration: props.speed,
               animationFillMode: "forwards",
               animationIterationCount: "infinite",
