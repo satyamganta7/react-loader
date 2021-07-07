@@ -1,17 +1,24 @@
-import RicherLoader from "./hoc/RicherLoader";
+import React from "react";
 import "./App.css";
-import Facebook from "./containers/Facebook/Facebook"
 import Sidebar from "./components/Sidebar/Sidebar";
 import NewsWidget from "./components/NewsWidget/NewsWidget";
 
-
 function App() {
   return (
-    <div className="App" style={{ maxWidth: "470px", background:"#FFF"}}>
-   <Sidebar />
-  
-  <div style={{height:"80px", background: "#f8f7f6", margin:'-1px', marginBottom:'20px'}}>&nbsp;</div>
-   <NewsWidget />
+    <div className="App" style={{ maxWidth: "470px", background: "#FFF" }}>
+      <Sidebar />
+
+      <div
+        style={{
+          height: "80px",
+          background: "#f8f7f6",
+          margin: "-1px",
+          marginBottom: "20px",
+        }}
+      >
+        &nbsp;
+      </div>
+      <NewsWidget />
       {/* <RicherLoader animate={true} background="yellow" speed="5s">
    
      
@@ -23,7 +30,6 @@ function App() {
         <div style={{ width: "90%", left: "0", marginTop: "30px" }}></div>
         <div style={{ width: "90%", left: "0" }}></div>
       </RicherLoader> */}
-      {/* <Facebook/> */}
     </div>
   );
 }
