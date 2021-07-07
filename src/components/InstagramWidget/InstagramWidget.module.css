@@ -1,0 +1,44 @@
+.default {
+    min-height: 8px;
+    margin-bottom: 8px;
+    position: relative;
+}
+.image {
+    width: 40px !important;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute !important;
+}
+
+.firstHeader {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 40%;
+}
+
+.secondHeader {
+    height: 6px;
+    margin-left: 50px;
+    width: 20%;
+}
+
+.firstLine {
+    margin-top: 30px;
+    width: 90%;
+}
+
+.secondLine {
+    width: 75%;
+}
+
+.thirdLine {
+    width: 50%;
+}
+
+.fourthLine {
+    width: 40%;
+}
+
+.fifthLine {
+    width: 50%;
+}

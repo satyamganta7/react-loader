@@ -1,0 +1,16 @@
+.default {
+    height: 8px;
+    margin-bottom: 12px;
+    position: relative;
+    border-radius: 3px;
+}
+.firstLine {
+    margin-bottom: 40px;
+    height: 100px;
+    width: 100%;
+}
+
+.commonLine {
+    width: 100%;
+    height: 24px;
+}

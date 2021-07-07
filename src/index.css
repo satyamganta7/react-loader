@@ -1,3 +1,6 @@
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+
+
 .animated,
 .no-animation {
   position: relative;
@@ -8,6 +11,15 @@
 
   margin-bottom: 6px;
   background: #f6f7f8;
+}
+.widgetBox{
+  max-width: 470px;
+  position: relative;
+  background: #FFF;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #eee;
+  margin-bottom: 30px;
 }
 
 @keyframes move {
@@ -22,4 +34,9 @@
 
 .animated {
   animation-name: move;
+}
+@media (max-width:767px){
+.widgetBox{
+  margin-bottom: 20px;
+}
 }

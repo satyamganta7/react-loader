@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import classes from "./NewsWidget.module.css";
+import classes from "./NewLetterWidget.module.css";
 import RicherLoader from "../../hoc/RicherLoader";
 
-const NewsWidget = (props) => (
-  <RicherLoader animate={true} background="#eeeeee" speed="1.5s">
-    <div className={[classes.default, classes.image].join(" ")}></div>
-    <div className={[classes.default, classes.firstHeader].join(" ")}></div>
+const NewLetterWidget = (props) => (
+  <RicherLoader animate={true} background="#eee" speed="1.5s">
+    <div className={[classes.default, classes.firstLine].join(" ")}></div>
+    <div className={[classes.default, classes.commonLine].join(" ")}></div>
     <div className={[classes.default, classes.commonLine].join(" ")}></div>
     <div className={[classes.default, classes.commonLine].join(" ")}></div>
     <div className={[classes.default, classes.commonLine].join(" ")}></div>
@@ -16,4 +16,4 @@ const NewsWidget = (props) => (
     <div className={[classes.default, classes.commonLine].join(" ")}></div>
   </RicherLoader>
 );
-export default NewsWidget;
+export default NewLetterWidget;
